@@ -31,6 +31,23 @@ https://list-users-a3r4.vercel.app/
 - Se usaron CSS para los estilos.
 - Se implemento el lazy loading para el componente de detalle de usuario.
 
+## Instalación
+
+```bash
+# Clone repo
+git clone https://github.com/alexsantosquispe/list-users.git
+cd list-users
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Go to localhost
+Open http://localhost:5173
+```
+
 ## Arquitectura
 
 Algunos patrones usuados:
