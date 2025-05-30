@@ -1,0 +1,114 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+input[type="search"] {
+  max-width: 15rem;
+  padding: 0.625rem 0.625rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.master-detail-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.user-item:hover {
+  background-color: #ddd;
+}
+.user-item-selected {
+  background-color: #ddd;
+}
+
+.user-item h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.user-item span {
+  font-size: 0.75rem;
+}
+
+.detail-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50dvh;
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.user-detail h2 {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.user-info-container {
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: 8rem 2fr;
+}
