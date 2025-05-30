@@ -19,6 +19,9 @@ Objetivo: Crear una mini SPA con React.
 
 ## Implementación
 
+La implementacion se puede verificar en el ambiente desplegado con Vercel:
+https://list-users-a3r4.vercel.app/
+
 - La solución implementada se hizo con React + Vite para un desarrollo rápido y sencillo
   también se hizo uso de typescript para evitar algunos errores durante el desarrollo.
 - Inicialment se muestra la lista de usuario con el endpoint proporcionado y en caso de tener una lista vacia se muestra un mensaje.
@@ -35,3 +38,11 @@ Algunos patrones usuados:
 - Se hizo uso del patrón Container/Presentational para separar el manejo de los estados de lo components de presentación.
 - Early return en el caso de la lista de usuarios, el filtrado y el detalle.
 - Se implemento unn diseño Master/Detail para implementar la UI.
+
+## Consideraciones:
+
+La implementación aún tiene varias áreas de mejora y no se tomaron en cuenta los siguientes puntos:
+
+- SEO el performace como la accesibilidad pueden mejorar.
+- El diseño responsive para pantallas pequeñas.
+- El code splitting para los estilos que ayudaría a una mejor legibilidad de los CSS.
