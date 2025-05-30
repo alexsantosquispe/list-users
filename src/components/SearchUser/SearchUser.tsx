@@ -1,4 +1,5 @@
 import { type ChangeEvent } from "react";
+import "./SearchUser.css";
 
 export const SearchUser = ({
   onSearch

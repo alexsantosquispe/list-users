@@ -1,4 +1,5 @@
-import type { User } from "../types";
+import type { User } from "../../types";
+import "./UsersList.css";
 
 interface UserListProps {
   users: User[];

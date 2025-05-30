@@ -1,0 +1,33 @@
+.users-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+  min-height: 50dvh;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.user-item:hover {
+  background-color: #ddd;
+}
+.user-item-selected {
+  background-color: #ddd;
+}
+
+.user-item h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.user-item span {
+  font-size: 0.75rem;
+}

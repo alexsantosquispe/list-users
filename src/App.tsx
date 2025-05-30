@@ -1,9 +1,9 @@
 import { lazy, Suspense } from "react";
-import { UserList } from "./components/UsersList";
-import { SearchUser } from "./components/SearchUser";
+import { UserList } from "./components/UsersList/UsersList";
+import { SearchUser } from "./components/SearchUser/SearchUser";
 import { useUsersList } from "./hooks/useUsersList";
 
-const UserDetailLazy = lazy(() => import("./components/UserDetail"));
+const UserDetailLazy = lazy(() => import("./components/UserDetail/UserDetail"));
 
 function App() {
   const { users, selectedUser, setSelectedUser, setFilterByName } =

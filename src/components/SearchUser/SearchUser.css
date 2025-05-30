@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="search"] {
+  max-width: 15rem;
+  padding: 0.625rem 0.625rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}

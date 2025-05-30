@@ -1,4 +1,5 @@
-import type { User } from "../types";
+import type { User } from "../../types";
+import "./UserDetail.css";
 
 interface UserDetailProps {
   user: User | null;
