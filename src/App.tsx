@@ -13,20 +13,22 @@ function App() {
     <div className="main-container">
       <h1>Tabla de Usuarios</h1>
       <SearchUser onSearch={setFilterByName} />
+      <>
+        <span id="total">{`Total de usuarios: ${users.length}`}</span>
+        <div className="master-detail-wrapper">
+          <UserList
+            users={users}
+            selectedUserId={selectedUser?.id}
+            onSelectUser={setSelectedUser}
+          />
 
-      <div className="master-detail-wrapper">
-        <UserList
-          users={users}
-          selectedUserId={selectedUser?.id}
-          onSelectUser={setSelectedUser}
-        />
-
-        <div className="detail-wrapper">
-          <Suspense>
-            <UserDetailLazy user={selectedUser} />
-          </Suspense>
+          <div className="detail-wrapper">
+            <Suspense>
+              <UserDetailLazy user={selectedUser} />
+            </Suspense>
+          </div>
         </div>
-      </div>
+      </>
     </div>
   );
 }
